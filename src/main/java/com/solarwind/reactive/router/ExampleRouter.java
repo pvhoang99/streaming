@@ -18,33 +18,33 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 @Configuration
 public class ExampleRouter {
 
-    @Bean
-    public RouterFunction<ServerResponse> route1(ExampleHandler exampleHandler) {
-        return RouterFunctions.route(RequestPredicates
-                .GET("/functional/test1")
-                .and(RequestPredicates.accept(MediaType.TEXT_PLAIN)), exampleHandler::funcTest1);
-    }
-
-    @Bean
-    public RouterFunction<ServerResponse> route2(ExampleHandler exampleHandler) {
-        return RouterFunctions.route(RequestPredicates
-                .GET("/functional/test2")
-                .and(RequestPredicates.accept(MediaType.TEXT_PLAIN)), exampleHandler::funcTest2);
-    }
-
-    @Bean
-    public RouterFunction<ServerResponse> listAll(ExampleHandler exampleHandler) {
-        return RouterFunctions.route(RequestPredicates
-                .GET("/functional/user/list")
-                .and(RequestPredicates.accept(MediaType.APPLICATION_JSON)), exampleHandler::findAll);
-    }
-
-    @Bean
-    public RouterFunction<ServerResponse> findByGender(ExampleHandler exampleHandler) {
-        return RouterFunctions.route(RequestPredicates
-                .GET("/functional/user/{gender}")
-                .and(RequestPredicates.accept(MediaType.APPLICATION_JSON)), exampleHandler::findByGender);
-    }
+//    @Bean
+//    public RouterFunction<ServerResponse> route1(ExampleHandler exampleHandler) {
+//        return RouterFunctions.route(RequestPredicates
+//                .GET("/functional/test1")
+//                .and(RequestPredicates.accept(MediaType.TEXT_PLAIN)), exampleHandler::funcTest1);
+//    }
+//
+//    @Bean
+//    public RouterFunction<ServerResponse> route2(ExampleHandler exampleHandler) {
+//        return RouterFunctions.route(RequestPredicates
+//                .GET("/functional/test2")
+//                .and(RequestPredicates.accept(MediaType.TEXT_PLAIN)), exampleHandler::funcTest2);
+//    }
+//
+//    @Bean
+//    public RouterFunction<ServerResponse> listAll(ExampleHandler exampleHandler) {
+//        return RouterFunctions.route(RequestPredicates
+//                .GET("/functional/user/list")
+//                .and(RequestPredicates.accept(MediaType.APPLICATION_JSON)), exampleHandler::findAll);
+//    }
+//
+//    @Bean
+//    public RouterFunction<ServerResponse> findByGender(ExampleHandler exampleHandler) {
+//        return RouterFunctions.route(RequestPredicates
+//                .GET("/functional/user/{gender}")
+//                .and(RequestPredicates.accept(MediaType.APPLICATION_JSON)), exampleHandler::findByGender);
+//    }
 
 
 }
