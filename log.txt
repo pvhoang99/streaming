@@ -1,11 +1,4 @@
 a
 b
-c
-d
-e
-f
-g
-h
-h
-e
-j
+abcd
+abcds

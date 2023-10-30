@@ -9,14 +9,14 @@ import java.util.stream.Stream;
 public class FileService {
 
     public Stream<Integer> readFile() {
-       return Stream.generate(() -> {
-            try {
-                Thread.sleep(1000); // Delay 1 giây
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            return new Random().nextInt();
-        });
+           return Stream.generate(() -> {
+                try {
+                    Thread.sleep(1000); // Delay 1 giây
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                return new Random().nextInt();
+            });
     }
 
 }
